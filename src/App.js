@@ -25,16 +25,15 @@
 
 // export default App;
 import React, { Component } from "react";
-
+import Counter from "./Counter"
 export default class App extends Component {
-  handleClick = () => {
-    console.log("button-clicked", this);
-  }
+
   render() {
     return (
       <div>
-        <button className="btn btn-success" onClick={this.handleClick}>click</button>
+        <Counter />
+
       </div>
-    )
+    );
   }
 } 
